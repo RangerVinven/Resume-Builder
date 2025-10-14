@@ -11,18 +11,20 @@ import org.yaml.snakeyaml.Yaml;
 public class FileReader {
 
     // Reads a yaml file
-    public static void readFile(String pathToFile) {
+    public static Resume readFile(String pathToFile) {
         LoaderOptions options = new LoaderOptions();
         Yaml yaml = new Yaml(options);
 
         try (InputStream inputStream = new FileInputStream(pathToFile)) {
             Resume resume = yaml.loadAs(inputStream, Resume.class);
             System.out.println(resume);
+
+            return resume;
         } catch (Exception e) {
             System.out.println("Failed to read YAML file. Recieved error: " + e.toString());
+            System.exit(1);
+            return null;
         }
-
-        //return new Resume();
     }
 
 }
