@@ -1,0 +1,25 @@
+person_information:
+  name: John Doe
+  details:
+    - test@example.com
+    - 0123456789
+
+sections:
+  - name: Work Experience
+    items:
+      - title: Google
+        subtitle: Senior Fullstack Developer
+        meta: Jan 2024 - Present
+        bullet_points:
+          - Made lots of projects
+          - Got promoted a bunch
+          - Had lots of fun
+  - name: Education
+    items:
+      - title: Harvard
+        subtitle: BSc (Hons) Software Development
+        meta: Jan 2024 - Present
+        bullet_points:
+          - Made lots of projects
+          - Got promoted a bunch
+          - Had lots of fun

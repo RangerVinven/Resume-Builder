@@ -1,4 +1,4 @@
-package dev.danielmcpherson.resume-builder;
+package dev.danielmcpherson.resume_builder;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

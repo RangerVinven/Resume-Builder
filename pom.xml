@@ -3,11 +3,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>dev.danielmcpherson.resume-builder</groupId>
-  <artifactId>resume-builder</artifactId>
+  <groupId>dev.danielmcpherson.resume_builder</groupId>
+  <artifactId>resume_builder</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>resume-builder</name>
+  <name>resume_builder</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -40,6 +40,13 @@
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+        <groupId>org.yaml</groupId>
+        <artifactId>snakeyaml</artifactId>
+        <version>2.2</version>            
+    </dependency>
+
   </dependencies>
 
   <build>
@@ -83,6 +90,14 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.6.1</version>
+        </plugin>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.6.1</version>
+            <configuration>
+                <mainClass>dev.danielmcpherson.resume_builder.App</mainClass>
+            </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
