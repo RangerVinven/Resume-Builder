@@ -10,6 +10,9 @@ public class App {
     public static void main(String[] args) {
         Resume resume = FileReader.readFile("resume.yaml");
 
+        YAMLGenerator yamlGenerator = new YAMLGenerator("Hello, can you understand me?", Paths.get("master.txt"));
+        yamlGenerator.generateYaml();
+
         try {
             Configuration configuration = FreemarkerUtil.createConfiguration();
             String html = FreemarkerUtil.renderResumeHtml(configuration, resume);
