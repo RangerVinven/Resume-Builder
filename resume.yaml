@@ -6,7 +6,7 @@ person_information:
 
 personal_statement:
   name: Personal Statement
-  statement: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel arcu sed odio elementum hendrerit at eu dolor. Integer imperdiet magna at nunc volutpat egestas. Nam sed ornare libero. Duis sollicitudin erat et diam egestas dapibus. Morbi et leo libero. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam pharetra facilisis tempus.
+  statement: I am a passionate software developer with experience building scalable web applications and leading development teams. I enjoy solving complex problems and delivering high-quality software that drives business value. Skilled in fullstack development, cloud technologies, and Agile methodologies, I am committed to continuous learning and contributing to innovative projects. I thrive in collaborative environments where I can mentor others and tackle challenging technical problems.
 
 sections:
   - name: Work Experience
