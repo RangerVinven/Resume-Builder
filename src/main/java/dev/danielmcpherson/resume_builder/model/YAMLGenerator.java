@@ -82,7 +82,7 @@ public class YAMLGenerator {
             .addSystemMessage(prompt)
             .addUserMessage("Here is the job description:\n\n" + jobDescription)
             .addUserMessage("And here's all the person's experience:\n\n" + masterInformation)
-            .addUserMessage(exampleFormat)
+            .addUserMessage("And finally, here's the format you must respond with:\n\n" + exampleFormat)
             .model(ChatModel.GPT_5_NANO)
             .build();
 
