@@ -53,7 +53,7 @@
         margin-bottom: 1.5rem;
     }
 
-    section h2 {
+    section h2, .personal-statement h2 {
         border-bottom: 2px solid #444;
         padding-bottom: 0.1rem;
         margin-bottom: 0.8rem;
@@ -106,6 +106,12 @@
         color: #555;
     }
 
+    .personal-statement p {
+        margin: -0.5rem 0 1.25rem 0;
+        line-height: 1.1;
+        font-size: 10.5pt;
+    }
+
     .section-item ul {
         margin: 0.025rem 0 0 0;
     }
@@ -129,6 +135,20 @@
 
                 <p>${resume.person_information.details?join(' | ')}</p>
             </header>
+
+            <#if resume.personal_statement?? && resume.personal_statement?has_content>
+            <div class="section-item personal-statement">
+                <div class="section-item-header">
+                    <#if resume.personal_statement.name?? && resume.personal_statement.name?has_content>
+                    <h2>${resume.personal_statement.name}</h2>
+                    </#if>
+                </div>
+
+                <#if resume.personal_statement.statement?? && resume.personal_statement.statement?has_content>
+                <p>${resume.personal_statement.statement}</p>
+                </#if>
+            </div>
+            </#if>
 
             <!-- ===== SECTIONS ===== -->
             <#list resume.sections as section>

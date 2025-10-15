@@ -4,6 +4,10 @@ person_information:
     - john.doe@example.com
     - 0123456789
 
+personal_statement:
+  name: Personal Statement
+  statement: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel arcu sed odio elementum hendrerit at eu dolor. Integer imperdiet magna at nunc volutpat egestas. Nam sed ornare libero. Duis sollicitudin erat et diam egestas dapibus. Morbi et leo libero. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam pharetra facilisis tempus.
+
 sections:
   - name: Work Experience
     items:
