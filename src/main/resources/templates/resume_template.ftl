@@ -19,8 +19,11 @@
 
     .page {
         box-sizing: border-box;
-        page-break-after: always;
         margin: 0 auto;
+    }
+
+    .page:not(:last-child) {
+        page-break-after: always;
     }
 
     /* --- HEADER --- */
@@ -52,10 +55,10 @@
 
     section h2 {
         border-bottom: 2px solid #444;
-        padding-bottom: 0.2rem;
+        padding-bottom: 0.1rem;
         margin-bottom: 0.8rem;
         text-transform: uppercase;
-        font-size: 14pt;
+        font-size: 13pt;
         letter-spacing: 1px;
     }
 
@@ -98,13 +101,13 @@
     }
 
     .section-item p.subtitle {
-        margin: -0.25rem 0;
+        margin: -0.25rem 0 0 0;
         font-size: 10.5pt;
         color: #555;
     }
 
     .section-item ul {
-        margin: 0.3rem 0 0 0;
+        margin: 0.025rem 0 0 0;
     }
 
     .section-item ul li {
