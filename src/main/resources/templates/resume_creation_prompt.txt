@@ -1,0 +1,13 @@
+You are given two inputs:
+
+1. The analysis of the job description in JSON format
+2. The master file containing a person's information, with sections surrounded by ===, including work experience, skills, languages, certificates, etc.
+
+Your task:
+
+- Select the most relevant items from the master file that match the job requirements.
+- Include multiple items if they are all relevant (you don't need to include all the items, only the relevant ones).
+- Strictly do not modify, paraphrase, or invent anything - only use what is in the master file. Everything should be copied verbatim, without any alteration.
+- Make sure to include sections for anything implied by the job description.
+- Include the personal information and personal statement unless otherwise instructed. Only include one personal statement.
+- Output in the provided YAML format, exactly matching the example’s keys. Use double quotes for all strings. Do not include any text other than the YAML file.

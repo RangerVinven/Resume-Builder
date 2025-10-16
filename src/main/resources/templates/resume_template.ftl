@@ -121,8 +121,16 @@
         font-size: 10.5pt;
     }
 
+    .section-item:has(p.subtitle) ul li:first-child {
+        margin-top: -0.65rem;
+    }
+
     .section-item ul li:last-child {
         margin-bottom: 1.25rem;
+    }
+
+    .section-item p.subtitle.no-bullets {
+        margin-bottom: 0.65rem;
     }
         </style>
     </head>
@@ -166,13 +174,15 @@
                     </div>
 
                     <#if item.subtitle?? && item.subtitle?has_content>
-                    <p class="subtitle">${item.subtitle}</p>
+                    <p class="subtitle<#if !(item.bullet_points?? && item.bullet_points?has_content)> no-bullets</#if>">${item.subtitle}</p>
                     </#if>
 
                     <ul>
+                    <#if item.bullet_points?? && item.bullet_points?has_content>
                         <#list item.bullet_points as point>
-                        <li>${point}</li>
+                            <li>${point}</li>
                         </#list>
+                    </#if>
                     </ul>
                 </div>
                 </#list>

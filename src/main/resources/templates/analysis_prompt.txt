@@ -1,0 +1,24 @@
+You will be given a job description. Your task is to analyze it in detail and extract all relevant information about the job. Consider:
+
+- The pace and type of work (fast-paced, deadline-driven, relaxed, collaborative, etc.)
+- Required skills (technical and soft skills)
+- Certifications or languages explicitly required
+- Cultural or team values (e.g., family-like, high-performance, innovative, laid-back, fast-paced)
+- Any specific qualifications mentioned (e.g., degrees, years of experience)
+- Anything else you think leads to a holisitc view of the company, their values, and what they're looking for in an applicant 
+
+Output the information as a structured JSON object like the one below, do not deviate from it:
+
+{
+  "companyName": "",
+  "jobType": "",
+  "workStyle": "",
+  "requiredSkills": [],
+  "requiredProgrammingLanguages": [],
+  "requiredSpokenLanguages": [],
+  "certifications": [],
+  "teamValues": [],
+  "otherNotes": ""
+}
+
+Fill in as many fields as possible. If a field is not mentioned in the job description, leave it empty.
