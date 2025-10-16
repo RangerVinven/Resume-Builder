@@ -7,7 +7,7 @@ You will be given a job description. Your task is to analyze it in detail and ex
 - Any specific qualifications mentioned (e.g., degrees, years of experience)
 - Anything else you think leads to a holisitc view of the company, their values, and what they're looking for in an applicant 
 
-Output the information as a structured JSON object like the one below, do not deviate from it:
+Output the information as a structured JSON object like the one below, do not deviate from it and don't write any other text outside this JSON object:
 
 {
   "companyName": "",
@@ -18,6 +18,7 @@ Output the information as a structured JSON object like the one below, do not de
   "requiredSpokenLanguages": [],
   "certifications": [],
   "teamValues": [],
+  "allOtherRequirements": [],
   "otherNotes": ""
 }
 
