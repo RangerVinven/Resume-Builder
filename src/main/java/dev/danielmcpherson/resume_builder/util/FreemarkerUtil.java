@@ -13,6 +13,7 @@ import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateExceptionHandler;
 import freemarker.template.Version;
+import freemarker.core.HTMLOutputFormat;
 
 import com.openhtmltopdf.pdfboxout.PdfRendererBuilder;
 
@@ -32,6 +33,8 @@ public class FreemarkerUtil {
         cfg.setWrapUncheckedExceptions(true);
         cfg.setFallbackOnNullLoopVariable(false);
         cfg.setNumberFormat("computer");
+        cfg.setOutputFormat(HTMLOutputFormat.INSTANCE);
+        cfg.setAutoEscapingPolicy(Configuration.ENABLE_IF_DEFAULT_AUTO_ESCAPING_POLICY);
 
         return cfg;
     }
