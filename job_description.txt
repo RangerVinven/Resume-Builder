@@ -15,7 +15,7 @@ Key Responsibilities
     Support system integrations, resolve performance issues, and maintain high system availability
     Keep up to date with emerging technologies and recommend innovative solutions
 
-The successful candidate will have a development background with extensive exposure to C#, .NET, SQL and Python. Any experience of using Power Platform is beneficial but not essential. You must be fluent in German for this job.
+The successful candidate will have a development background with extensive exposure to C#, .NET, SQL and Python. Any experience of using Power Platform is beneficial but not essential. You must be fluent in German for this job, be a public speaker and have been Employee of the Year at one of your previous jobs.
 
 Get in touch with FT Recruitment to find out more.
 
