@@ -1,0 +1,58 @@
+---------------- Work Experience ---------------
+- title: Google
+subtitle: Senior Fullstack Developer
+meta: Jan 2024 - Present
+bullet_points:
+  - Developed and maintained scalable web applications for international clients.
+  - Led a team of 5 developers on high-priority projects, improving delivery speed by 30%.
+  - Optimized performance, reducing page load times by 40%.
+- title: Microsoft
+subtitle: Fullstack Developer
+meta: Feb 2021 - Dec 2023
+bullet_points:
+  - Built new features for internal tools used by 1000+ employees.
+  - Implemented CI/CD pipelines improving deployment efficiency.
+  - Mentored junior developers and conducted code reviews.
+
+---------------- Education ---------------
+- title: Harvard University
+subtitle: BSc (Hons) Software Development
+meta: Sep 2017 - Jun 2020
+bullet_points:
+  - Graduated with First-Class Honours.
+  - Won multiple hackathons and tech competitions.
+  - Participated in multiple hackathons and tech competitions.
+
+---------------- Skills ---------------
+- title: Programming Languages
+bullet_points:
+  - Python, JavaScript, TypeScript, Java, C++
+- title: Frameworks and Tools
+bullet_points:
+  - React, Node.js, Django, Flask, Docker, Kubernetes, Git
+
+---------------- Projects ---------------
+- title: Open Source Analytics Dashboard
+subtitle: Personal Project
+meta: 2022
+bullet_points:
+  - Built a full-featured analytics dashboard using React and Node.js.
+  - Integrated multiple APIs for live data visualization.
+- title: AI Chatbot
+subtitle: Team Project
+meta: 2021
+bullet_points:
+  - Developed an AI chatbot using Python and NLP libraries.
+  - Deployed on AWS and handled over 10,000 conversations in beta testing.
+
+---------------- Certifications ---------------
+- title: AWS Certified Solutions Architect
+subtitle: Amazon Web Services
+meta: 2023
+bullet_points:
+  - Learned best practices for building scalable cloud applications.
+- title: Professional Scrum Master I
+subtitle: Scrum.org
+meta: 2022
+bullet_points:
+  - Gained expertise in Agile project management and Scrum methodology.
