@@ -8,6 +8,9 @@ import java.io.InputStream;
 import org.yaml.snakeyaml.LoaderOptions;
 import org.yaml.snakeyaml.Yaml;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+
 public class FileReader {
 
     // Reads a yaml file
@@ -26,5 +29,17 @@ public class FileReader {
             return null;
         }
     }
+
+    public static Resume readFromString(String yamlContent) {
+        ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+        try {
+            return mapper.readValue(yamlContent, Resume.class);
+        } catch (Exception e) {
+            System.out.println("Failed to read YAML input. Recieved error: " + e.toString());
+            System.exit(1);
+            return null;
+        }
+    }
+
 
 }
