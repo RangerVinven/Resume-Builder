@@ -69,34 +69,34 @@ public class YAMLGenerator {
     }
 
     public static String saveYaml(String yaml, Resume resume) {
-    String companyName = null;
+        String companyName = null;
 
-    try {
-        Path jobFilePath = Paths.get("job_description.txt");
-        companyName = Files.readAllLines(jobFilePath, StandardCharsets.UTF_8).get(0).trim();
-    } catch (Exception e) {
-        System.err.println("Failed to read company name from job_description.txt: " + e.getMessage());
+        try {
+            Path jobFilePath = Paths.get("job_description.txt");
+            companyName = Files.readAllLines(jobFilePath, StandardCharsets.UTF_8).get(0).trim();
+        } catch (Exception e) {
+            System.err.println("Failed to read company name from job_description.txt: " + e.getMessage());
+        }
+
+        if (companyName == null || companyName.isEmpty()) {
+            companyName = Long.toString(Instant.now().toEpochMilli());
+        }
+
+        Path folderPath = Paths.get("generated", companyName);
+        String fileName = companyName + ".yaml";
+        Path filePath = folderPath.resolve(fileName);
+
+        try {
+            Files.createDirectories(folderPath);
+            Files.writeString(filePath, yaml, StandardCharsets.UTF_8);
+        } catch (Exception e) {
+            System.err.println("Failed to save YAML: " + e.getMessage());
+            System.out.println("YAML content:\n" + yaml);
+            System.exit(1);
+        }
+
+        return companyName;
     }
-
-    if (companyName == null || companyName.isEmpty()) {
-        companyName = Long.toString(Instant.now().toEpochMilli());
-    }
-
-    Path folderPath = Paths.get("generated", companyName);
-    String fileName = companyName + ".yaml";
-    Path filePath = folderPath.resolve(fileName);
-
-    try {
-        Files.createDirectories(folderPath);
-        Files.writeString(filePath, yaml, StandardCharsets.UTF_8);
-    } catch (Exception e) {
-        System.err.println("Failed to save YAML: " + e.getMessage());
-        System.out.println("YAML content:\n" + yaml);
-        System.exit(1);
-    }
-
-    return companyName;
-}
 
     // Reads the masterFile and returns its contents
     private String getMasterInformation() {
