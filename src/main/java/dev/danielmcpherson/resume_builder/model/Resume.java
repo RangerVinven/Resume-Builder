@@ -3,6 +3,7 @@ package dev.danielmcpherson.resume_builder.model;
 import java.util.List;
 
 public class Resume {
+    private String companyName;
     private PersonInformation person_information;
     private PersonalStatement personal_statement;
     private List<Section> sections;
@@ -28,5 +29,13 @@ public class Resume {
     }
     public void setSections(List<Section> sections) {
         this.sections = sections;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getCompanyName() {
+        return companyName;
     }
 }
