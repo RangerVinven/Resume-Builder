@@ -1,252 +1,468 @@
 ================ Person's Information ===============
-person_information:
-   name: John Doe
-   details:
-     - john.doe@example.com
-     - 0123456789
+"person_information":
+   "name": "John Doe"
+   "details":
+     - "john.doe.dev@example.com"
+     - "0123456789"
 
-================ Personal Statement ===============
-personal_statement:
-  name: Personal Statement
-  statement: I am a passionate software developer with experience building scalable web applications and leading development teams. I enjoy solving complex problems and delivering high-quality software that drives business value. Skilled in fullstack development, cloud technologies, and Agile methodologies, I am committed to continuous learning and contributing to innovative projects. I thrive in collaborative environments where I can mentor others and tackle challenging technical problems.
+================ Personal Statements ===============
+"personal_statements":
+  - "name": "Personal Statement"
+    "statement": "I am a passionate software developer with experience building scalable web applications and leading development teams. I enjoy solving complex problems and delivering high-quality software that drives business value. Skilled in fullstack development, cloud technologies, and Agile methodologies, I am committed to continuous learning and contributing to innovative projects. I thrive in collaborative environments where I can mentor others and tackle challenging technical problems."
+
+  - "name": "Personal Statement"
+    "statement": "Seasoned technology leader with a demonstrated track record of building and scaling high-performing, diverse engineering teams. My expertise lies in translating complex business strategy into executable technical roadmaps, driving innovation from 0-to-1 and at planet-scale. I am passionate about mentorship, fostering a culture of psychological safety and engineering excellence, and delivering measurable business impact through technology."
+
+  - "name": "Personal Statement"
+    "statement": "Principal-level engineer with deep, hands-on expertise in distributed systems, ultra-low-latency APIs, and large-scale data processing. I thrive on solving the most complex 'impossible' problems, from kernel-level optimization in Rust to architecting multi-region, fault-tolerant service meshes. I am a strong advocate for technical standards, a force-multiplier for senior engineers, and a proven leader in setting long-term technical direction for entire organizations."
+
+  - "name": "Personal Statement"
+    "statement": "A product-driven full-stack engineer who specializes in bridging the gap between product, design, and complex backend infrastructure. I am a strong believer in rapid iteration, data-driven development, and rigorous A/B testing to validate user-centric hypotheses. My goal is to leverage my skills in React, TypeScript, and distributed backends to build and ship features that are not only technically elegant but also delight users and move key business metrics."
+
+  - "name": "Personal Statement"
+    "statement": "Accomplished AI and Machine Learning engineer with a research background from Stanford and hands-on experience productionizing models at scale. My expertise spans from foundational research in reinforcement learning and NLP to building robust, scalable MLOps pipelines on cloud infrastructure. I am seeking to apply my skills in PyTorch, TensorFlow, and distributed data systems (like Spark and Kafka) to solve high-impact problems at the intersection of AI and real-world application."
+
+  - "name": "Personal Statement"
+    "statement": "Entrepreneurial and versatile engineer with a 0-to-1 mindset. I am adept at rapid prototyping, full-stack development, and navigating high-ambiguity environments to find product-market fit. Having experience leading early-stage teams, I am comfortable wearing many hats—from architecting the initial infrastructure on a budget to writing the first lines of code for a mobile app and defining the engineering culture."
 
 ================ Work Experience ===============
-- title: Google
-  subtitle: Staff Software Engineer
-  meta: Jan 2024 - Present
-  bullet_points:
-    - Architected and led the development of a new real-time data processing platform, reducing latency by 70%.
-    - Mentored a team of 10 engineers, fostering a culture of high performance and continuous improvement.
-    - Drove cross-organizational initiatives to standardize API design and security protocols across multiple products.
-    - Optimized cloud infrastructure costs, saving the department over $2M annually through resource management.
+- "title": "Google"
+  "subtitle": "Staff Software Engineer / Tech Lead"
+  "meta": "Jan 2024 - Present | Mountain View, CA"
+  "bullet_points":
+    - "Architected and led the development of a new real-time data processing platform on Google Cloud (Dataflow, Bigtable), reducing end-to-end latency by 70% for critical advertising analytics."
+    - "Mentored and managed a team of 10-12 engineers, fostering a culture of high performance, continuous improvement, and inclusive collaboration."
+    - "Drove cross-organizational initiatives to standardize API design (gRPC) and security protocols (BeyondCorp) across multiple products, impacting 50+ teams."
+    - "Optimized cloud infrastructure costs, saving the department over $2M annually through intelligent resource autoscaling and commitment strategies."
+    - "Led the technical design review (TDR) committee for the Ads SRE organization, providing architectural guidance on new services."
 
-- title: Databricks
-  subtitle: Senior Data Engineer
-  meta: Feb 2023 - Dec 2023
-  bullet_points:
-    - Designed and implemented scalable ETL/ELT pipelines processing terabytes of data daily using Apache Spark.
-    - Built and maintained data lakehouse architecture on AWS S3 and Delta Lake for analytics and ML teams.
-    - Optimized Spark jobs and cluster configurations, improving data processing speeds by over 40%.
-    - Collaborated with data scientists to productionize machine learning models and feature engineering pipelines.
+- "title": "Databricks"
+  "subtitle": "Senior Data Engineer, Lakehouse Platform"
+  "meta": "Feb 2023 - Dec 2023 | San Francisco, CA"
+  "bullet_points":
+    - "Designed and implemented highly scalable, multi-tenant ETL/ELT pipelines processing over 50 terabytes of data daily using Apache Spark (Scala/Python) and Delta Lake."
+    - "Built and maintained data lakehouse architecture on AWS (S3, Glue) and Azure (ADLS), serving as the single source of truth for all internal analytics and ML teams."
+    - "Tuned and optimized complex Spark jobs and cluster configurations, improving data processing speeds by over 40% and reducing cluster costs by 25%."
+    - "Collaborated closely with data scientists to productionize and automate machine learning models and feature engineering pipelines using MLflow."
+    - "Authored internal data governance and quality frameworks, ensuring SOC 2 compliance for all data pipelines."
 
-- title: Netflix
-  subtitle: Software Engineer, Cloud Infrastructure
-  meta: Jan 2022 - Jan 2023
-  bullet_points:
-    - Engineered and maintained high-availability, fault-tolerant cloud services on AWS for the streaming platform.
-    - Implemented chaos engineering principles to identify and rectify system vulnerabilities pre-production.
-    - Developed custom tooling for automated infrastructure provisioning and monitoring, saving hundreds of man-hours.
-    - Contributed to an internal PaaS, improving developer experience for over 50 engineering teams.
+- "title": "Netflix"
+  "subtitle": "Senior Software Engineer, Cloud Infrastructure (SRE)"
+  "meta": "Jan 2022 - Jan 2023 | Los Gatos, CA"
+  "bullet_points":
+    - "Engineered and maintained high-availability, fault-tolerant core infrastructure services on AWS (EC2, S3,DynamoDB) for the global streaming platform, supporting millions of concurrent users."
+    - "Designed and implemented chaos engineering principles using the Chaos Monkey framework to proactively identify and rectify system vulnerabilities and cascading failures pre-production."
+    - "Developed custom tooling in Go and Python for automated infrastructure provisioning (Terraform) and real-time monitoring, saving hundreds of engineering man-hours per quarter."
+    - "Contributed to an internal PaaS (Titus), improving the developer experience and deployment velocity for over 50 core engineering teams."
+    - "Served as a primary on-call incident commander for high-severity (SEV-1) production outages, leading triage and resolution efforts."
 
-- title: Microsoft
-  subtitle: Fullstack Developer
-  meta: Feb 2020 - Dec 2021
-  bullet_points:
-    - Built new features for internal tools used by 10,000+ employees, improving operational efficiency.
-    - Implemented comprehensive CI/CD pipelines using Azure DevOps, reducing deployment failures by 60%.
-    - Mentored junior developers and conducted rigorous code reviews to maintain high code quality standards.
-    - Modernized legacy front-end codebases from jQuery to React and TypeScript, enhancing maintainability.
+- "title": "Microsoft"
+  "subtitle": "Fullstack Developer II, Azure"
+  "meta": "Feb 2020 - Dec 2021 | Redmond, WA"
+  "bullet_points":
+    - "Built and maintained new features for internal cloud management tools used by 10,000+ Azure engineers, significantly improving operational efficiency and incident response time."
+    - "Engineered and implemented comprehensive CI/CD pipelines using Azure DevOps (YAML) and Jenkins, reducing deployment failures by 60% and enabling multi-stage, canary releases."
+    - "Mentored junior developers and interns, conducted rigorous code reviews, and championed team-wide adoption of best practices like TDD and pair programming."
+    - "Led the successful modernization of several legacy front-end codebases from jQuery and AngularJS to React 17 and TypeScript, enhancing maintainability and performance."
 
-- title: Stripe
-  subtitle: Backend Engineer
-  meta: Jan 2019 - Jan 2020
-  bullet_points:
-    - Designed and implemented low-latency APIs for payment processing systems handling millions of daily requests.
-    - Worked on security protocols and fraud detection algorithms to protect user data and transactions.
-    - Optimized database queries and caching strategies, enabling the system to handle a 200% increase in volume.
+- "title": "Stripe"
+  "subtitle": "Backend Engineer, Payments Infrastructure"
+  "meta": "Jan 2019 - Jan 2020 | Dublin, Ireland"
+  "bullet_points":
+    - "Designed and implemented high-throughput, low-latency APIs (in Ruby and Go) for core payment processing systems handling millions of daily global requests."
+    - "Worked on critical security protocols, PCI-DSS compliance, and advanced fraud detection algorithms to protect user data and transactions against emerging threats."
+    - "Optimized critical-path database queries (PostgreSQL) and implemented multi-layer caching strategies (Redis), enabling the system to handle a 200% increase in peak volume."
+    - "Contributed to the development of a novel distributed tracing system to debug complex, asynchronous payment workflows across multiple microservices."
 
-- title: StartupX
-  subtitle: Frontend Developer
-  meta: Jun 2017 - Dec 2018
-  bullet_points:
-    - Built responsive, mobile-first web interfaces using React, Vue.js, and TailwindCSS for a variety of clients.
-    - Introduced automated testing with Jest and Cypress, increasing code coverage from 20% to 85%.
-    - Collaborated directly with clients and designers to rapidly iterate on UI/UX features based on feedback.
+- "title": "Jane Street"
+  "subtitle": "Quantitative Developer"
+  "meta": "Jun 2017 - Dec 2018 | New York, NY"
+  "bullet_points":
+    - "Developed and optimized ultra-low-latency trading systems in C++ and OCaml for high-frequency algorithmic trading strategies."
+    - "Researched and implemented novel statistical arbitrage models and market simulation tools using large-scale historical tick data."
+    - "Built high-performance data analysis tools and frameworks using Python (NumPy, Pandas) and kdb+/q to analyze terabytes of market data."
+    - "Collaborated in a high-pressure environment with quantitative researchers and traders to deploy and monitor real-time trading algorithms."
+
+- "title": "Facebook (Meta)"
+  "subtitle": "Software Engineer Intern, Feed Infrastructure"
+  "meta": "Jun 2016 - Sep 2016 | Menlo Park, CA"
+  "bullet_points":
+    - "Developed and benchmarked a new caching layer in C++ for the News Feed ranking service, reducing p99 latency by 15% for a subset of users."
+    - "Wrote extensive unit and integration tests for the new service, ensuring a bug-free rollout to production."
+    - "Shipped code to production within the first three weeks, impacting millions of users."
+
+- "title": "CERN"
+  "subtitle": "Summer Research Intern, ATLAS Experiment"
+  "meta": "Jun 2015 - Aug 2015 | Geneva, Switzerland"
+  "bullet_points":
+    - "Developed simulation and analysis software (in C++ and ROOT) to model particle interactions in the ATLAS detector."
+    - "Analyzed large datasets from the Large Hadron Collider (LHC) to calibrate detector components."
+    - "Presented findings to a group of international physicists and researchers."
 
 ================ Education ===============
-- title: Stanford University
-  subtitle: MSc in Computer Science (AI Specialization)
-  meta: Sep 2018 - Jun 2020
-  bullet_points:
-    - Thesis on "Efficient Reinforcement Learning Models for Autonomous Systems," published at NeurIPS.
-    - GPA: 3.9/4.0, awarded the AI Research Excellence Scholarship.
-    - Teaching Assistant for "CS229: Machine Learning," leading weekly discussion sections for 100+ students.
+- "title": "Stanford University"
+  "subtitle": "MSc in Computer Science (AI Specialization)"
+  "meta": "Sep 2018 - Jun 2020 | Stanford, CA"
+  "bullet_points":
+    - "Thesis: **\"Efficient Reinforcement Learning Models for Autonomous Multi-Agent Systems,\"** published at NeurIPS 2020."
+    - "GPA: 3.9/4.0. Awarded the AI Research Excellence Scholarship."
+    - "Teaching Assistant for **CS229: Machine Learning** (Prof. Andrew Ng), leading weekly discussion sections for 100+ students."
+    - "Relevant Coursework: Deep Learning (CS230), NLP with Deep Learning (CS224n), Reinforcement Learning (CS234), Graph Neural Networks (CS224W)."
 
-- title: Harvard University
-  subtitle: BSc (Hons) Software Development
-  meta: Sep 2014 - Jun 2017
-  bullet_points:
-    - Graduated with First-Class Honours (Summa Cum Laude).
-    - Won multiple hackathons, including the Ivy League "CodeFest 2016" for a project on sustainable tech.
-    - Final-year dissertation on distributed computing and data scalability in peer-to-peer networks.
+- "title": "Harvard University"
+  "subtitle": "BSc (Hons) Software Development"
+  "meta": "Sep 2014 - Jun 2017 | Cambridge, MA"
+  "bullet_points":
+    - "Graduated with **First-Class Honours (Summa Cum Laude)**."
+    - "Won multiple hackathons, including the **Ivy League \"CodeFest 2016\"** for a project on sustainable tech supply chain management using blockchain."
+    - "Final-year dissertation: **\"Scalable Consensus Algorithms for Distributed Peer-to-Peer Networks.\"**"
+    - "President of the Harvard Computer Society (2016-2017)."
 
-- title: Deep Learning Specialization
-  subtitle: Coursera / deeplearning.ai
-  meta: 2021
-  bullet_points:
-    - Completed a 5-course specialization covering Neural Networks, Hyperparameter Tuning, and Sequence Models.
-    - Implemented and trained deep neural networks for computer vision and NLP tasks using TensorFlow.
+- "title": "MIT xPRO"
+  "subtitle": "Professional Certificate in Quantum Computing"
+  "meta": "2022"
+  "bullet_points":
+    - "Completed an advanced program on quantum mechanics, quantum algorithms (e.g., Shor's, Grover's), and quantum information science."
+    - "Implemented algorithms using Qiskit and simulated quantum systems."
+
+- "title": "Deep Learning Specialization"
+  "subtitle": "Coursera / deeplearning.ai"
+  "meta": "2021"
+  "bullet_points":
+    - "Completed a 5-course specialization covering Neural Networks, Hyperparameter Tuning, CNNs, and Sequence Models."
+    - "Implemented and trained deep neural networks for computer vision and NLP tasks using TensorFlow and Keras."
 
 ================ Skills ===============
-- title: Programming Languages
-  bullet_points:
-    - Python, Go, TypeScript/JavaScript, Rust, Java, C++, SQL, Scala, Shell Scripting
-- title: Frontend Technologies
-  bullet_points:
-    - React, Next.js, Vue.js, Svelte, GraphQL (Apollo/Relay), Webpack, Vite, TailwindCSS, D3.js
-- title: Backend Technologies
-  bullet_points:
-    - Node.js, Express, Django, FastAPI, Spring Boot, gRPC, RESTful APIs, WebSockets
-- title: Databases & Data Stores
-  bullet_points:
-    - PostgreSQL, MongoDB, Cassandra, ScyllaDB, Redis, Elasticsearch, Neo4j
-- title: Data Processing & Messaging
-  bullet_points:
-    - Apache Spark, Apache Kafka, RabbitMQ, Flink, Airflow, dbt, Kinesis
-- title: Cloud & DevOps
-  bullet_points:
-    - AWS, GCP, Azure, Kubernetes, Docker, Terraform, Ansible, Jenkins, GitHub Actions, CircleCI
-- title: Observability & Monitoring
-  bullet_points:
-    - Prometheus, Grafana, Datadog, Jaeger, OpenTelemetry, ELK Stack (Elasticsearch, Logstash, Kibana)
-- title: Methodologies
-  bullet_points:
-    - Agile, Scrum, Kanban, DevOps, Site Reliability Engineering (SRE), Test-Driven Development (TDD)
+- "title": "Programming Languages"
+  "bullet_points":
+    - "**Expert**: Python, Go (Golang), TypeScript/JavaScript, Rust, Java, C++"
+    - "**Proficient**: SQL, Scala, Shell Scripting, OCaml, C, Kotlin, Swift"
+
+- "title": "Frontend Technologies"
+  "bullet_points":
+    - "**Frameworks**: React, Next.js, Vue.js, Svelte, Angular (v2+), Remix"
+    - "**Tooling**: Webpack, Vite, Babel, esbuild, GraphQL (Apollo/Relay)"
+    - "**Styling**: TailwindCSS, CSS-in-JS (Styled Components), SCSS, D3.js"
+
+- "title": "Backend Technologies"
+  "bullet_points":
+    - "**Frameworks**: Node.js (Express, Fastify), Django, FastAPI, Spring Boot, Gin, Ktor"
+    - "**APIs & Comms**: gRPC, RESTful APIs, WebSockets, GraphQL, Protobuf"
+
+- "title": "Databases & Data Stores"
+  "bullet_points":
+    - "**SQL**: PostgreSQL, MySQL, CockroachDB, AlloyDB"
+    - "**NoSQL**: MongoDB, Cassandra, ScyllaDB, DynamoDB, Neo4j, Couchbase"
+    - "**Caches & Indexes**: Redis, Elasticsearch, OpenSearch, Solr, Memcached"
+
+- "title": "Data Processing & Messaging"
+  "bullet_points":
+    - "**Streaming**: Apache Kafka, RabbitMQ, Pulsar, Flink, Kinesis, Google Pub/Sub"
+    - "**Batch/ETL**: Apache Spark, Apache Airflow, dbt, Trino (Presto), Dagster"
+
+- "title": "Cloud & DevOps"
+  "bullet_points":
+    - "**Platforms**: AWS, GCP, Azure (Certified on all three)"
+  T- "**Containers**: Kubernetes (K8s), Docker, Helm, Service Mesh (Istio, Linkerd)"
+    - "**IaC**: Terraform, Ansible, Pulumi, CloudFormation, Packer"
+    - "**CI/CD**: GitHub Actions, Jenkins, CircleCI, GitLab CI, Spinnaker, Azure DevOps"
+
+- "title": "Observability & Monitoring"
+  "bullet_points":
+    - "Prometheus, Grafana, Datadog, Jaeger, OpenTelemetry (OTel), ELK Stack (Elasticsearch, Logstash, Kibana), Splunk"
+
+- "title": "AI/ML Frameworks"
+  "bullet_points":
+    - "PyTorch, TensorFlow, Keras, scikit-learn, Hugging Face (Transformers), MLflow, Kubeflow, Ray"
+
+- "title": "Security"
+  "bullet_points":
+    - "Vault by HashiCorp, OAuth 2.0 / OIDC, JWT, mTLS, Static/Dynamic Analysis (SAST/DAST), OWASP Top 10"
+
+- "title": "Methodologies"
+  "bullet_points":
+    - "Agile, Scrum, Kanban, DevOps, Site Reliability Engineering (SRE), Test-Driven Development (TDD), Domain-Driven Design (DDD), CI/CD"
 
 ================ Projects ===============
-- title: Open Source Analytics Dashboard
-  subtitle: Personal Project
-  meta: 2023
-  bullet_points:
-    - Built a full-featured, self-hostable analytics dashboard using Next.js, FastAPI, and PostgreSQL.
-    - Gained over 1,500 stars on GitHub and contributions from 10+ developers.
-    - Packaged for easy deployment using Docker and Helm charts for Kubernetes.
+- "title": "Nexus OS - Open Source Analytics Dashboard"
+  "subtitle": "Personal Project (Creator & Lead Maintainer)"
+  "meta": "2023 - Present"
+  "bullet_points":
+    - "Built a full-featured, self-hostable product analytics dashboard (à la PostHog) using Next.js, FastAPI (Python), and ClickHouse."
+    - "Gained over **1,500 stars on GitHub** and merged contributions from 10+ external developers. [Link to project](https://github.com/johndoe/nexus-os)"
+    - "Packaged for easy deployment using Docker and official Helm charts for Kubernetes."
 
-- title: Serverless ETL Pipeline for IoT Data
-  subtitle: Personal Project
-  meta: 2022
-  bullet_points:
-    - Architected and built a serverless pipeline on AWS using Lambda, Kinesis, and S3 for real-time IoT data.
-    - Transformed and aggregated data, loading it into Redshift for business intelligence and analysis.
-    - The architecture supports ingestion of over 100,000 events per second with high availability.
+- "title": "Kubernetes Contribution - Kube-Scheduler"
+  "subtitle": "Open Source Contribution"
+  "meta": "2023"
+  "bullet_points":
+    - "Contributed a new scheduling pre-emption feature to the core Kubernetes scheduler (written in Go)."
+    - "The feature (KEP-1234) improved pod scheduling efficiency in high-contention clusters by 18%."
+    - "Wrote extensive e2e tests and documentation for the new feature, which was included in release v1.28."
 
-- title: Real-time Collaborative Whiteboard
-  subtitle: Personal Project
-  meta: 2021
-  bullet_points:
-    - Developed a web application allowing multiple users to draw and brainstorm in real-time.
-    - Utilized WebSockets for low-latency communication and React with Canvas API for the interface.
-    - Deployed on a serverless architecture using AWS Lambda and API Gateway for cost-effective scaling.
+- "title": "Rust-based CLI Tool for Code Analysis ('CodeLense')"
+  "subtitle": "Open Source Contribution (Core Maintainer)"
+  "meta": "2023 - Present"
+  "bullet_points":
+    - "Contributed core features to a popular open-source static analysis tool written in Rust."
+    - "Implemented a new parsing engine utilizing parallel processing, which improved analysis performance by 300%."
+    - "Now a core maintainer, responsible for reviewing PRs, managing releases, and planning the project roadmap."
 
-- title: Rust-based CLI Tool for Code Analysis
-  subtitle: Open Source Contribution
-  meta: 2023 - Present
-  bullet_points:
-    - Contributed core features to a popular open-source static analysis tool written in Rust.
-    - Implemented a new parsing engine that improved performance by 300%.
-    - Now a core maintainer, responsible for reviewing PRs and planning the project roadmap.
+- "title": "Serverless ETL Pipeline for IoT Data"
+  "subtitle": "Personal Project"
+  "meta": "2022"
+  "bullet_points":
+    - "Architected and built a fully serverless data pipeline on AWS using Lambda, Kinesis, API Gateway, and S3 for ingesting real-time IoT data."
+    - "Transformed and aggregated data using Lambda, loading it into Redshift for business intelligence and visualization in QuickSight."
+    - "The architecture supports ingestion of over 100,000 events per second with high availability and pay-per-use cost-effectiveness."
+
+- "title": "Quantum Algorithm Simulator"
+  "subtitle": "Personal Project"
+  "meta": "2022"
+  "bullet_points":
+    - "Developed a simulator in Python and Rust (using PyO3) to execute and visualize quantum algorithms (Shor's, Grover's) on classical hardware."
+    - "Implemented from scratch as part of my MIT xPRO certification to gain a deeper understanding of quantum gates and circuits."
+
+- "title": "Real-time Collaborative Whiteboard ('SyncBoard')"
+  "subtitle": "Personal Project"
+  "meta": "2021"
+  "bullet_points":
+    - "Developed a web application allowing multiple users to draw, write, and brainstorm in real-time."
+    - "Utilized WebSockets (Socket.io) for low-latency communication and React with the HTML Canvas API for the interface."
+    - "Deployed on a serverless architecture using AWS Lambda, API Gateway, and DynamoDB for session management."
+
+- "title": "FinSight - AI-Powered Personal Finance App"
+  "subtitle": "Hackathon Project (Winner)"
+  "meta": "2020"
+  "bullet_points":
+    - "Led a team of four at the TechCrunch Disrupt Hackathon 2020."
+    - "Built a mobile app (React Native) that used Plaid API to aggregate transactions and a custom ML model (scikit-learn) to detect fraudulent activity."
+    - "Pitched the concept and demo to a panel of judges, winning **Best Overall Project**."
 
 ================ Certifications ===============
-- title: Certified Kubernetes Administrator (CKA)
-  subtitle: The Linux Foundation
-  meta: 2024
-  bullet_points:
-    - Validated skills in production-level Kubernetes management, networking, and security.
+- "title": "Certified Kubernetes Administrator (CKA)"
+  "subtitle": "The Linux Foundation"
+  "meta": "2024"
+  "bullet_points":
+    - "Validated expert skills in production-level Kubernetes management, networking, storage, and security."
 
-- title: AWS Certified Solutions Architect - Professional
-  subtitle: Amazon Web Services
-  meta: 2023
-  bullet_points:
-    - Demonstrated advanced ability to design and deploy scalable, fault-tolerant applications on AWS.
+- "title": "Certified Information Systems Security Professional (CISSP)"
+  "subtitle": "(ISC)²"
+  "meta": "2024"
+  "bullet_points":
+    - "Achieved a globally recognized standard of competence in designing, implementing, and managing a best-in-class cybersecurity program."
 
-- title: Google Cloud Professional Cloud Architect
-  subtitle: Google Cloud
-  meta: 2023
-  bullet_points:
-    - Mastered designing, developing, and managing robust and secure solutions on GCP.
+- "title": "AWS Certified Solutions Architect - Professional"
+  "subtitle": "Amazon Web Services"
+  "meta": "2023"
+  "bullet_points":
+    - "Demonstrated advanced ability to design, deploy, and manage scalable, highly available, and fault-tolerant applications on AWS."
 
-- title: HashiCorp Certified: Terraform Associate
-  subtitle: HashiCorp
-  meta: 2022
-  bullet_points:
-    - Certified in Infrastructure as Code (IaC) principles and best practices using Terraform.
+- "title": "Google Cloud Professional Cloud Architect"
+  "subtitle": "Google Cloud"
+  "meta": "2023"
+  "bullet_points":
+    - "Mastered designing, developing, and managing robust, secure, and scalable solutions on GCP."
 
-- title: Certified Information Systems Security Professional (CISSP)
-  subtitle: (ISC)²
-  meta: 2024
-  bullet_points:
-    - Achieved a globally recognized standard of competence in information security.
+- "title": "Microsoft Certified: Azure Solutions Architect Expert (AZ-305)"
+  "subtitle": "Microsoft"
+  "meta": "2023"
+  "bullet_points":
+    - "Certified expertise in designing cloud and hybrid solutions on Azure, including compute, network, storage, and security."
+
+- "title": "Offensive Security Certified Professional (OSCP)"
+  "subtitle": "Offensive Security"
+  "meta": "2022"
+  "bullet_points":
+    - "A hands-on penetration testing certification, demonstrating the ability to compromise target systems using a variety of exploits."
+
+- "title": "HashiCorp Certified: Terraform Associate"
+  "subtitle": "HashiCorp"
+  "meta": "2022"
+  "bullet_points":
+    - "Certified in Infrastructure as Code (IaC) principles and best practices using Terraform."
+
+- "title": "Confluent Certified Developer for Apache Kafka (CCDAK)"
+  "subtitle": "Confluent"
+  "meta": "2021"
+  "bullet_points":
+    - "Verified expertise in building and deploying applications that interact with the Apache Kafka ecosystem."
+
+- "title": "Databricks Certified Data Engineer Professional"
+  "subtitle": "Databricks"
+  "meta": "2023"
+  "bullet_points":
+    - "Demonstrated advanced skills in the Databricks Lakehouse Platform, including Spark, Delta Lake, and production pipeline development."
 
 ================ Public Speaking ===============
-- title: Scaling Microservices with Kubernetes and Service Mesh
-  subtitle: KubeCon North America
-  meta: 2024
-  bullet_points:
-    - Presented a case study on transitioning from a monolith to a scalable microservices ecosystem using Istio.
-    - Shared best practices for observability, traffic management, and security in a service mesh.
+- "title": "Scaling Microservices with Kubernetes and eBPF"
+  "subtitle": "**Keynote Speaker**, KubeCon North America"
+  "meta": "2024"
+  "bullet_points":
+    - "Presented a keynote to 5,000+ attendees on leveraging eBPF for high-performance networking and observability in a service mesh."
+    - "Shared a case study on transitioning from a monolith to a scalable microservices ecosystem using Istio and Cilium."
 
-- title: High-Performance Data Pipelines with Rust and Kafka
-  subtitle: Strange Loop Conference
-  meta: 2023
-  bullet_points:
-    - Delivered a technical deep-dive on building memory-safe and highly concurrent data processing services.
-    - Demonstrated performance benchmarks showing a 10x improvement over a similar JVM-based service.
+- "title": "High-Performance Data Pipelines with Rust and Kafka"
+  "subtitle": "**Invited Speaker**, Strange Loop Conference"
+  "meta": "2023"
+  "bullet_points":
+    - "Delivered a technical deep-dive on building memory-safe and highly concurrent data processing services in Rust."
+    - "Demonstrated performance benchmarks showing a 10x throughput improvement over a similar JVM-based service."
 
-- title: The Future of Frontend Development
-  subtitle: Local Tech Meetup, San Francisco
-  meta: 2022
-  bullet_points:
-    - Led a discussion on emerging trends, including WebAssembly, server components, and AI-driven UI generation.
+- "title": "Podcast Guest: 'TechLead Unfiltered' (Episode 142)"
+  "subtitle": "Podcast Appearance"
+  "meta": "2023"
+  "bullet_points":
+    - "Discussed the future of SRE, the rise of platform engineering, and strategies for managing large-scale distributed systems."
+
+- "title": "The Future of Frontend Development: WebAssembly vs. JavaScript"
+  "subtitle": "Speaker, SFJS Meetup, San Francisco"
+  "meta": "2022"
+  "bullet_points":
+    - "Led a discussion on emerging trends, including WebAssembly, server components (RSC), and AI-driven UI generation."
+
+- "title": "Guest Lecturer: 'CS441: Distributed Systems'"
+  "subtitle": "Stanford University"
+  "meta": "2022"
+  "bullet_points":
+    - "Invited by Prof. [Professor's Name] to lecture on real-world incident response and post-mortem culture at Netflix."
+
+- "title": "Internal Tech Talk: 'The Rust Revolution'"
+  "subtitle": "Google Tech Talk (Internal)"
+  "meta": "2024"
+  "bullet_points":
+    - "Evangelized the adoption of Rust for performance-critical infrastructure components, leading to 3 new teams adopting it."
 
 ================ Publications ===============
-- title: "Federated Learning for Privacy-Preserving AI"
-  subtitle: IEEE Transactions on Dependable and Secure Computing
-  meta: 2023
-  bullet_points:
-    - Authored a research paper on novel federated learning techniques to train models without centralizing user data.
+- "title": "**Book: \"The Distributed Systems Handbook: A Guide to SRE\"**"
+  "subtitle": "O'Reilly Media"
+  "meta": "Expected 2025"
+  "bullet_points":
+    - "Authored a 400-page book on practical Site Reliability Engineering, covering topics from observability and incident response to capacity planning and chaos engineering."
 
-- title: “Optimizing API Performance at Scale”
-  subtitle: Medium / Towards Data Science
-  meta: 2022
-  bullet_points:
-    - Wrote an in-depth technical article on improving backend performance, caching, and load balancing.
-    - Featured on the front page of Hacker News, receiving over 50,000 views.
+- "title": "**\"Federated Learning for Privacy-Preserving AI\"**"
+  "subtitle": "IEEE Transactions on Dependable and Secure Computing"
+  "meta": "2023"
+  "bullet_points":
+    - "First author on a peer-reviewed research paper on novel federated learning techniques to train models without centralizing sensitive user data."
 
-- title: “AI and the Future of Software Engineering”
-  subtitle: Journal of Emerging Tech
-  meta: 2021
-  bullet_points:
-    - Co-authored a peer-reviewed paper on the ethical use of AI tools in modern development workflows.
+- "title": "**\"Efficient Reinforcement Learning Models for Autonomous Multi-Agent Systems\"**"
+  "subtitle": "Conference on Neural Information Processing Systems (NeurIPS)"
+  "meta": "2020"
+  "bullet_points":
+    - "My master's thesis, which was accepted as a spotlight presentation at NeurIPS 2020."
+
+- "title": "**\"Optimizing API Performance at Scale: Caching, Load Balancing, and Beyond\"**"
+  "subtitle": "Medium / Towards Data Science (Featured Article)"
+  "meta": "2022"
+  "bullet_points":
+    - "Wrote an in-depth technical article on improving backend performance, read by over 100,000 developers."
+    - "Featured on the front page of Hacker News and in multiple tech newsletters."
+
+- "title": "**\"AI and the Future of Software Engineering Ethics\"**"
+  "subtitle": "Journal of Emerging Tech & Ethics"
+  "meta": "2021"
+  "bullet_points":
+    - "Co-authored a peer-reviewed paper on the ethical frameworks required for AI-powered development tools like GitHub Copilot."
+
+================ Patents ===============
+- "title": "**Patent: \"Method for Low-Latency, Asynchronous Data Replication in Distributed Databases\"**"
+  "subtitle": "U.S. Patent No. 11,234,567 (Issued)"
+  "meta": "Filed 2022, Issued 2024"
+  "bullet_points":
+    - "Invented a novel replication method that reduces latency and ensures eventual consistency in globally distributed systems. (Work at Netflix)"
+
+- "title": "**Patent: \"System for Real-Time Anomaly Detection in High-Volume Event Streams\"**"
+  "subtitle": "U.S. Patent Application No. 18/987,654 (Pending)"
+  "meta": "Filed 2023"
+  "bullet_points":
+    - "Co-inventor of a system using unsupervised ML models to detect security and operational anomalies in real-time data streams. (Work at Databricks)"
 
 ================ Awards & Recognition ===============
-- title: Excellence in Innovation Award
-  subtitle: Google
-  meta: 2024
-  bullet_points:
-    - Awarded for pioneering a new internal tool that increased developer productivity by 15% across the organization.
+- "title": "Excellence in Innovation Award (Spot Bonus)"
+  "subtitle": "Google"
+  "meta": "2024"
+  "bullet_points":
+    - "Awarded for pioneering a new internal developer tool (built in Go and React) that increased developer productivity by 15% across the organization."
 
-- title: Open Source Contributor of the Year
-  subtitle: The Linux Foundation
-  meta: 2023
-  bullet_points:
-    - Recognized for significant contributions to the Kubernetes and Rust ecosystems.
+- "title": "Open Source Contributor of the Year"
+  "subtitle": "The Linux Foundation"
+  "meta": "2023"
+  "bullet_points":
+    - "Recognized for significant contributions to the Kubernetes and Rust ecosystems, including core feature development and mentorship."
 
-- title: Employee of the Year
-  subtitle: Microsoft
-  meta: 2021
-  bullet_points:
-    - Awarded for outstanding contribution to cross-team collaboration and mentorship initiatives.
+- "title": "Employee of the Year (Engineering Division)"
+  "subtitle": "Microsoft"
+  "meta": "2021"
+  "bullet_points":
+    - "Awarded for outstanding contribution to cross-team collaboration, technical leadership, and mentorship of junior engineers."
 
-- title: Winner - Global Hackathon
-  subtitle: Hosted by TechCrunch
-  meta: 2020
-  bullet_points:
-    - Led a team of four to build a machine learning model for real-time fraud detection in financial transactions.
+- "title": "Netflix Culture Award"
+  "subtitle": "Netflix"
+  "meta": "2022"
+  "bullet_points":
+    - "Recognized by peers for embodying the company values of 'Curiosity' and 'Courage' in driving the SRE roadmap."
+
+- "title": "Winner - TechCrunch Disrupt Global Hackathon"
+  "subtitle": "Hosted by TechCrunch"
+  "meta": "2020"
+  "bullet_points":
+    - "Led a team of four to build 'FinSight,' a machine learning model for real-time fraud detection, winning 'Best Overall Project'."
+
+- "title": "Databricks Values Award (UNITY)"
+  "subtitle": "Databricks"
+  "meta": "2023"
+  "bullet_points":
+    - "Awarded for fostering a unified team environment and breaking down silos between the Data Engineering and Data Science organizations."
+
+================ Volunteering & Mentorship ===============
+- "title": "Committer & PMC Member"
+  "subtitle": "Apache Software Foundation (Apache Airflow)"
+  "meta": "2021 - Present"
+  "bullet_points":
+    - "Active committer and member of the Project Management Committee (PMC) for the Apache Airflow project."
+    - "Review and merge code contributions, guide the technical roadmap, and help mentor new contributors."
+
+- "title": "Startup Mentor"
+  "subtitle": "Techstars San Francisco"
+  "meta": "2023 - Present"
+  "bullet_points":
+    - "Provide technical and strategic advice to early-stage (Seed/Series A) startups in the Techstars accelerator program."
+    - "Advise on topics including technical architecture, scaling, building engineering teams, and product strategy."
+
+- "title": "Volunteer Instructor"
+  "subtitle": "Code.org"
+  "meta": "2019 - 2022"
+  "bullet_points":
+    - "Taught 'Hour of Code' and introductory computer science workshops to under-served high school students in the Bay Area."
+
+================ Professional Memberships ===============
+- "title": "Senior Member, Association for Computing Machinery (ACM)"
+  "meta": "2022 - Present"
+- "title": "Member, Institute of Electrical and Electronics Engineers (IEEE)"
+  "meta": "2018 - Present"
+- "title": "Ambassador, Cloud Native Computing Foundation (CNCF)"
+  "meta": "2023 - Present"
 
 ================ Languages ===============
-- title: English
-  subtitle: Native Proficiency
-- title: Spanish
-  subtitle: Professional Working Proficiency
-- title: German
-  subtitle: Native Proficiency
+- "title": "English"
+  "subtitle": "Native Proficiency"
+- "title": "German"
+  "subtitle": "Native Proficiency (Bilingual)"
+- "title": "Spanish"
+  "subtitle": "Professional Working Proficiency (B2)"
+- "title": "Japanese"
+  "subtitle": "Elementary Proficiency (JLPT N4)"
+
+================ Interests ===============
+- "title": "Hobbies"
+  "bullet_points":
+    - "**Mountaineering**: Climbed Denali (2023) and Aconcagua (2022)."
+    - "**Generative Art**: Building interactive art installations using p5.js and Rust."
+    - "**Sailing**: Certified Skipper, regular participant in Bay Area regattas."
+    - "**3D Printing**: Designing and printing custom mechanical parts and prototypes."
+    - "**Music**: Classically trained cellist, former member of the Harvard-Radcliffe Orchestra."
+
+================ References ===============
+- "title": "References"
+  "statement": "Professional and academic references are available upon request from technical leaders at Google, Databricks, Netflix, and faculty at Stanford University."
