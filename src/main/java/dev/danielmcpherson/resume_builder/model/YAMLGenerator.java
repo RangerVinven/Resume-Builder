@@ -72,13 +72,27 @@ public class YAMLGenerator {
     }
 
     public String generateResume() {
-        // Gets all the person's experience, skills, etc from the master file
         String masterInformation = getMasterInformation();
-        String chatGPTResponse = callChatGPT(masterInformation);
+
+        JobAnalysis jobAnalysis = analyseJobDescription();
 
         System.out.println("Generating your custom resume...");
 
-        return chatGPTResponse;
+        OpenAIClient client = OpenAIOkHttpClient.builder()
+        .fromEnv()
+        .apiKey(dotenv.get("OPENAI_API_KEY"))
+        .build();
+
+        ChatCompletionCreateParams params = ChatCompletionCreateParams.builder()
+        .addSystemMessage(resumeCreationPrompt)
+        .addUserMessage("Here is the job description analysis:\n\n" + jobAnalysis.getAnalysis() + "\n\n")
+        .addUserMessage("And here's all the person's experience (the master file):\n\n" + masterInformation + "\n\n")
+        .addUserMessage("And finally, here's the example format you must respond with:\n\n" + exampleFormat)
+        .model(ChatModel.GPT_5_NANO)
+        .build();
+
+        ChatCompletion chatCompletion = client.chat().completions().create(params);
+        return chatCompletion.choices().get(0).message().content().get();
     }
 
     public static String saveYaml(String yaml, Resume resume) {
@@ -163,23 +177,5 @@ public class YAMLGenerator {
         analysis.setAnalysis(response);
         System.out.println(response);
         return analysis;
-    }
-
-    private String callChatGPT(String masterInformation) {
-        JobAnalysis jobAnalysis = analyseJobDescription();
-
-        System.out.println("Generating custom resume...");
-
-        OpenAIClient client = OpenAIOkHttpClient.builder().fromEnv().apiKey(dotenv.get("OPENAI_API_KEY")).build();
-        ChatCompletionCreateParams params = ChatCompletionCreateParams.builder()
-            .addSystemMessage(resumeCreationPrompt)
-            .addUserMessage("Here is the job description analysis:\n\n" + jobAnalysis.getAnalysis())
-            .addUserMessage("And here's all the person's experience (the master file):\n\n" + masterInformation)
-            .addUserMessage("And finally, here's the example format you must respond with:\n\n" + exampleFormat)
-            .model(ChatModel.GPT_5_NANO)
-            .build();
-
-        ChatCompletion chatCompletion = client.chat().completions().create(params);
-        return chatCompletion.choices().get(0).message().content().get();
     }
 }
