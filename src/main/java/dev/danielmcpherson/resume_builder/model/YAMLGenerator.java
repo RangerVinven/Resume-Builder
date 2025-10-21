@@ -28,12 +28,12 @@ public class YAMLGenerator {
     private String customInstructions;
     private Dotenv dotenv;
 
-    public YAMLGenerator(String jobDescription, Path masterFile) {
+    public YAMLGenerator(String jobDescriptionFile, String masterFile) {
         setPrompt();
         setExampleFormat();
         this.dotenv = Dotenv.load();
-        this.jobDescription = jobDescription;
-        this.masterFile = masterFile;
+        this.jobDescription = readJobDescriptionFile(jobDescriptionFile);
+        this.masterFile = Paths.get(masterFile);
     }
 
     public YAMLGenerator(String jobDescription, Path masterFile, String customInstructions) {
@@ -56,6 +56,19 @@ public class YAMLGenerator {
             System.exit(1);
         }
 
+    }
+
+    private String readJobDescriptionFile(String jobDescriptionFile) {
+        try {
+            System.out.println("Reading job description...");
+            return new String(Files.readString(Paths.get(jobDescriptionFile)));
+        } catch (Exception e) {
+            System.out.println("Couldn't read job description. Received error:");
+            e.printStackTrace();
+            System.exit(1);
+
+            return "";
+        }
     }
 
     public String generateResume() {
@@ -125,6 +138,8 @@ public class YAMLGenerator {
     }
 
     private JobAnalysis analyseJobDescription() {
+        System.out.println("Analysing job description...");
+
         OpenAIClient client = OpenAIOkHttpClient.builder().fromEnv().apiKey(dotenv.get("OPENAI_API_KEY")).build();
         ChatCompletionCreateParams params = ChatCompletionCreateParams.builder()
             .addSystemMessage(analysisPrompt)
@@ -152,6 +167,8 @@ public class YAMLGenerator {
 
     private String callChatGPT(String masterInformation) {
         JobAnalysis jobAnalysis = analyseJobDescription();
+
+        System.out.println("Generating custom resume...");
 
         OpenAIClient client = OpenAIOkHttpClient.builder().fromEnv().apiKey(dotenv.get("OPENAI_API_KEY")).build();
         ChatCompletionCreateParams params = ChatCompletionCreateParams.builder()
