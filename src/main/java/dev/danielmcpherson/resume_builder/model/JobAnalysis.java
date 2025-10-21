@@ -6,17 +6,31 @@ public class JobAnalysis {
 
     private String analysis;
     private String companyName;
+    private String jobTitle;
     private String jobType;
+    private String seniorityLevel;
     private String workStyle;
+    private String industry;
     private List<String> requiredSkills;
+    private List<String> technicalSkills;
     private List<String> requiredProgrammingLanguages;
     private List<String> requiredSpokenLanguages;
     private List<String> certifications;
+    private List<String> qualifications;
+    private String yearsOfExperience;
     private List<String> teamValues;
-    private List<String> allOtherRequirements;
-    private String otherNotes;
+    private List<String> otherRequirements;
+    private String notes;
 
     // Getters and Setters
+    public String getAnalysis() {
+        return analysis;
+    }
+
+    public void setAnalysis(String analysis) {
+        this.analysis = analysis;
+    }
+
     public String getCompanyName() {
         return companyName;
     }
@@ -25,12 +39,12 @@ public class JobAnalysis {
         this.companyName = companyName;
     }
 
-    public List<String> getAllOtherRequirements() {
-        return allOtherRequirements;
+    public String getJobTitle() {
+        return jobTitle;
     }
 
-    public void setAllOtherRequirements(List<String> allOtherRequirements) {
-        this.allOtherRequirements = allOtherRequirements;
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
     }
 
     public String getJobType() {
@@ -41,6 +55,14 @@ public class JobAnalysis {
         this.jobType = jobType;
     }
 
+    public String getSeniorityLevel() {
+        return seniorityLevel;
+    }
+
+    public void setSeniorityLevel(String seniorityLevel) {
+        this.seniorityLevel = seniorityLevel;
+    }
+
     public String getWorkStyle() {
         return workStyle;
     }
@@ -49,12 +71,28 @@ public class JobAnalysis {
         this.workStyle = workStyle;
     }
 
+    public String getIndustry() {
+        return industry;
+    }
+
+    public void setIndustry(String industry) {
+        this.industry = industry;
+    }
+
     public List<String> getRequiredSkills() {
         return requiredSkills;
     }
 
     public void setRequiredSkills(List<String> requiredSkills) {
         this.requiredSkills = requiredSkills;
+    }
+
+    public List<String> getTechnicalSkills() {
+        return technicalSkills;
+    }
+
+    public void setTechnicalSkills(List<String> technicalSkills) {
+        this.technicalSkills = technicalSkills;
     }
 
     public List<String> getRequiredProgrammingLanguages() {
@@ -81,6 +119,22 @@ public class JobAnalysis {
         this.certifications = certifications;
     }
 
+    public List<String> getQualifications() {
+        return qualifications;
+    }
+
+    public void setQualifications(List<String> qualifications) {
+        this.qualifications = qualifications;
+    }
+
+    public String getYearsOfExperience() {
+        return yearsOfExperience;
+    }
+
+    public void setYearsOfExperience(String yearsOfExperience) {
+        this.yearsOfExperience = yearsOfExperience;
+    }
+
     public List<String> getTeamValues() {
         return teamValues;
     }
@@ -89,20 +143,19 @@ public class JobAnalysis {
         this.teamValues = teamValues;
     }
 
-    public String getOtherNotes() {
-        return otherNotes;
+    public List<String> getOtherRequirements() {
+        return otherRequirements;
     }
 
-    public void setOtherNotes(String otherNotes) {
-        this.otherNotes = otherNotes;
+    public void setOtherRequirements(List<String> otherRequirements) {
+        this.otherRequirements = otherRequirements;
     }
 
-    public void setAnalysis(String analysis) {
-        this.analysis = analysis;
+    public String getNotes() {
+        return notes;
     }
 
-    public String getAnalysis() {
-        return analysis;
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
-
 }
