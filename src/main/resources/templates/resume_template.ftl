@@ -143,6 +143,7 @@
         margin: -0.5rem 0 1.25rem 0;
         line-height: 1.1;
         font-size: 10.5pt;
+        width: 100%;
     }
 
     .section-item ul {
