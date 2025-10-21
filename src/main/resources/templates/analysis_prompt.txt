@@ -1,25 +1,39 @@
-You will be given a job description. Your task is to analyze it in detail and extract all relevant information about the job. Consider:
+You will be given a job description. Your task is to analyze it in depth and extract all relevant information about the role, company culture, and requirements.
 
-- The pace and type of work (fast-paced, deadline-driven, relaxed, collaborative, etc.)
-- Required skills (technical and soft skills)
-- Certifications or languages explicitly required
-- Cultural or team values (e.g., family-like, high-performance, innovative, laid-back, fast-paced)
-- Any specific qualifications mentioned (e.g., degrees, years of experience)
-- Anything else you think leads to a holisitc view of the company, their values, and what they're looking for in an applicant 
+Carefully identify and infer details related to:
+- The pace and type of work (e.g., fast-paced, collaborative, client-facing, innovative, deadline-driven, remote-friendly, etc.)
+- Core required skills (both technical and soft skills)
+- Required or preferred programming languages, frameworks, or tools
+- Spoken or written language requirements (e.g., English fluency, bilingual roles)
+- Certifications, qualifications, or degrees mentioned
+- Years of experience or seniority level expected
+- Cultural or team values (e.g., family-oriented, results-driven, inclusive, startup-like, high-performance)
+- Job type and structure (e.g., full-time, contract, hybrid, remote, on-site)
+- Any industry or domain focus (e.g., healthcare, fintech, education)
+- Anything else that contributes to a holistic picture of the role and ideal candidate
 
-Output the information as a structured JSON object like the one below, do not deviate from it and don't write any other text outside this JSON object:
+Output a single structured JSON object **exactly** matching the following schema.
+Do not include any text before or after the JSON.
 
 {
   "companyName": "",
-  "jobType": "",
-  "workStyle": "",
-  "requiredSkills": [],
-  "requiredProgrammingLanguages": [],
-  "requiredSpokenLanguages": [],
-  "certifications": [],
-  "teamValues": [],
-  "allOtherRequirements": [],
-  "otherNotes": ""
+  "jobTitle": "",
+  "jobType": "",                       // e.g. Full-time, Contract, Internship
+  "seniorityLevel": "",                // e.g. Junior, Mid, Senior, Lead
+  "workStyle": "",                     // e.g. Remote, Hybrid, On-site
+  "industry": "",                      // e.g. Finance, Healthcare, Education
+  "requiredSkills": [],                // General skills like teamwork, communication
+  "technicalSkills": [],               // Tools, frameworks, or technologies
+  "requiredProgrammingLanguages": [],  // e.g. Python, JavaScript
+  "requiredSpokenLanguages": [],       // e.g. English, French
+  "certifications": [],                // e.g. AWS Certified, PMP
+  "qualifications": [],                // e.g. Bachelor's in Computer Science
+  "yearsOfExperience": "",             // Numeric or range
+  "teamValues": [],                    // e.g. Innovative, Collaborative
+  "otherRequirements": [],             // Miscellaneous specific criteria
+  "notes": ""                          // Any inferred insights not directly stated
 }
 
-Fill in as many fields as possible. If a field is not mentioned in the job description, leave it empty.
+If a field is not mentioned, leave it empty. Ensure that all arrays contain strings and no null values.
+
+Return ONLY valid JSON. Do not include markdown formatting, code fences, or explanations. Also infer the tone of voice used in the job description (e.g., formal, friendly, corporate, creative) and include it in the "notes" field.

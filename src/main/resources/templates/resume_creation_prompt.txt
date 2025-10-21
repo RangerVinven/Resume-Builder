@@ -1,13 +1,16 @@
 You are given two inputs:
 
-1. The analysis of the job description in JSON format
-2. The master file containing a person's information, with sections surrounded by ===, including work experience, skills, languages, certificates, etc.
+1. A JSON object representing the job description analysis. This contains details such as required skills, experience level, work style, and company values.
+2. A master resume file containing all of a candidate’s experiences, skills, projects, education, and other information. 
+   The master file is structured with sections surrounded by === markers (e.g., === Work Experience ===).
 
 Your task:
-
-- Select the most relevant items from the master file that match the job requirements.
-- Include multiple items if they are all relevant (you don't need to include all the items, only the relevant ones).
-- Strictly do not modify, paraphrase, or invent anything - only use what is in the master file. Everything should be copied verbatim, without any alteration.
-- Make sure to include sections for anything implied by the job description.
-- Include the personal information and personal statement unless otherwise instructed. Only include one personal statement.
-- Output in the provided YAML format, exactly matching the example’s keys. Use double quotes for all strings. Do not include any text other than the YAML file.
+- Select only the most relevant sections and items from the master file that best match the job’s requirements and implied expectations.
+- Include multiple items if they are clearly relevant. You do not need to include every section or every item.
+- **Do not** modify, paraphrase, or invent any content. Copy all text *exactly as it appears* in the master file (verbatim).
+- Do not merge or reword bullet points. Select them exactly as written.
+- Include the `person_information` and one `personal_statement` section (the one most aligned with the job analysis).
+- If the job analysis implies a requirement that matches a section not explicitly mentioned (e.g., teamwork -> soft skills), include that relevant section if it exists.
+- Preserve the structure of the master YAML exactly: same key names, same nesting, same field order.
+- Use **double quotes** around all strings.
+- Output only valid YAML in the same format as the example provided — no explanations, code fences, or additional text.
