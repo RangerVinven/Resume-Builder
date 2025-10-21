@@ -3,6 +3,7 @@ person_information:
   details:
     - "john.doe@example.com"
     - "0123456789"
+    - "[Github.com/RangerVinven](https://github.com/RangerVinven)"
 
 personal_statement:
   name: "Personal Statement"
@@ -14,6 +15,7 @@ sections:
       - title: "Google"
         subtitle: "Staff Software Engineer"
         meta: "Jan 2024 - Present"
+        meta_subtitle: "San Francisco"
         bullet_points:
           - "Architected and led the development of a new real-time data processing platform, reducing latency by 70%."
           - "Mentored a team of 10 engineers, fostering a culture of high performance and continuous improvement."
@@ -51,12 +53,10 @@ sections:
           - "Implemented and trained deep neural networks for computer vision and NLP tasks using TensorFlow."
   - name: "Skills"
     items:
-      - title: "Programming Languages"
-        bullet_points:
-          - "Python, Go, TypeScript/JavaScript, Rust, Java, C++, SQL, Scala, Shell Scripting"
-      - title: "Frameworks and Tools"
-        bullet_points:
-          - "React, Next.js, Vue.js, Svelte, GraphQL (Apollo/Relay), Webpack, Vite, TailwindCSS, D3.js"
+      - bullet_points:
+          - "**Languages:** Python, Go, TypeScript/JavaScript, Rust, Java, C++, SQL, Scala, Shell Scripting"
+          - "**Frameworks:** React, Next.js, Vue.js, Svelte, GraphQL (Apollo/Relay), Webpack, Vite, TailwindCSS, D3.js"
+        show_bullets: false
   - name: "Projects"
     items:
       - title: "Open Source Analytics Dashboard"
