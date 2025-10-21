@@ -111,7 +111,7 @@
     }
 
     .subtitle-container {
-    margin: -0.25rem 0 0 0;
+    margin: -0.5rem 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -152,7 +152,7 @@
     .section-item ul.no-bullets {
         list-style-type: none;
         padding-left: 0rem;
-        margin-top: 0.25rem;
+        margin-top: 0.625rem;
     }
 
     .section-item ul li {
@@ -161,7 +161,7 @@
     }
 
     .section-item:has(p.subtitle) ul li:first-child {
-        margin-top: -0.65rem;
+        margin-top: -0.5rem;
     }
 
     .section-item ul li:last-child {
